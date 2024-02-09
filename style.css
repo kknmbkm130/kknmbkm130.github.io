@@ -1,0 +1,292 @@
+*{
+ font-family: Arial, Helvetica, sans-serif; 
+ line-height: 30px;  
+ font-size: 20px;
+}
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #dedede;
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.layar-dalam {
+width: 1000px;
+margin: auto;
+}
+.layar-penuh {
+    width: 100%;
+}
+nav {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    border-bottom: 1px solid #d1d1d1;
+    line-height: 60px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+}
+nav.putih {
+background-color: #fff;
+}
+nav .logo {
+    float: left;
+    position: relative;
+    line-height: 55px;
+    text-align: center;
+}
+nav .logo img {
+    vertical-align: middle;
+    width: 100px;
+}
+
+nav .menu {
+    float: right;
+    height: 60px;
+    max-width: 600px;
+}
+
+nav .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav .menu ul li {
+    list-style-type: none;
+    float: left;
+    line-height: 95px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* pengaturan header */
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+header .intro {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
+header .intro h3 {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;  
+}
+.tombol {
+    background-color: #638889;
+    height: 40px;
+    line-height: 42px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0px 20px 0px 20px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.tombol:hover {
+    background-color: #86A7FC;
+    text-decoration: none;
+}
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 50%;
+    z-index: -1;
+}
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+.tombol-menu .garis {
+    height: 3px;
+    background-color: #fff;
+}
+section{
+    padding: 40px 0px 40px 0px;
+}
+section h3 {
+    font-size: 30px;
+}
+section h3::after{
+    content: "";
+    border-bottom: 5px solid #86A7FC;
+    width: 50px;
+    display: block;
+    margin: 20px auto;
+}
+#Profil,
+#Team,
+#Blog {
+    text-align: center;
+}
+section p.ringkasan {
+    font-style: italic;
+    font-size: 20px;
+    color: #393E46;
+}
+section konten-isi p {
+    font-style: normal;
+}
+nav.putih {
+    background-color: #fff;
+}
+nav.putih .tombol-menu .garis {
+    background-color: #333;
+}
+nav.putih ul li a {
+    color: #393E46;
+}
+.tim img {
+    width: 70%;
+    box-shadow: 0px -10 30px #ccc;
+    border-radius: 5px;
+    margin: 10%;
+}
+.tim, .Blog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    align-items: center; 
+}
+
+.tim h6, .Blog h4 {
+    margin: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.tim div {
+    text-align: center;
+    width: 25%;
+}
+.Blog .area{
+    width: 70%;
+    box-shadow: 0px -10px 30px #ccc;
+    border-radius: 5px;
+    margin: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+    align-items: center; 
+}
+.Blog div.area div {
+    text-align: center;
+    width: 500%;
+}
+.Blog .area .gambar {
+    border-radius: 5px 0px 0px 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+.Blog .area .text article {
+    padding: 40px;
+    text-align: center;
+}
+.Blog .area .text article h4 {
+    margin: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.Blog .area .text article a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.5s ease;
+}
+.Blog .area .text article a:hover {
+    color: #86A7FC;
+}
+footer {
+    padding: 20px 0px 20px 0px;
+    background-color: #393E46;
+    color: #fff;
+}
+footer .layar-dalam {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+footer .layar-dalam div {
+    width: 10%;
+}
+footer .layar-dalam h5 {
+    margin-top: 0px;
+    font-size: 20px;
+}
+@media screen and (max-width:991.98px) {
+.layar-dalam {
+    width: 90%;
+}
+nav .menu ul {
+    display: none;
+    margin-top: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+nav .menu ul li {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    line-height: 40px;
+}
+nav .menu ul li a {
+    color: #333;
+}
+    .tombol-menu {
+        display: flex;
+    }
+    .blog .area {
+        display: block;
+    }
+    .blog div.area div {
+        width: 100%;
+    }
+}
+
+
+
+
